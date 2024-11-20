@@ -1,0 +1,297 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-11-20T09:07:47.868Z",
+  "__export_source": "insomnia.desktop.app:v10.1.1",
+  "resources": [
+    {
+      "_id": "req_d6d8529945294b43bb92886a5ce433b3",
+      "parentId": "wrk_scratchpad",
+      "modified": 1732084603978,
+      "created": 1732084531119,
+      "url": "http://localhost:3000/api/tasks/assign",
+      "name": "Task Assign",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"taskId\": \"3\",\n\t\"email\": \"test@example.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.1.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732084531119,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "wrk_scratchpad",
+      "parentId": null,
+      "modified": 1732048956958,
+      "created": 1732048956958,
+      "name": "Scratch Pad",
+      "description": "",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_650cd9fd6106479491d5524d7218e77a",
+      "parentId": "wrk_scratchpad",
+      "modified": 1732084542741,
+      "created": 1732080461977,
+      "url": "http://localhost:3000/api/tasks/assigned",
+      "name": "Task Assigned",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"status\": \"open\",\n\t\"orderField\": \"status\",\n\t\"orderBy\": \"desc\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.1.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732080461977,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_af13e9e114ff4db9b9f726a6d28e218a",
+      "parentId": "wrk_scratchpad",
+      "modified": 1732079474988,
+      "created": 1732079404294,
+      "url": "http://localhost:3000/api/tasks/get",
+      "name": "Task Get",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [
+        {
+          "id": "pair_88221202eeb9492e8e7decf87038c790",
+          "name": "taskId",
+          "value": "3",
+          "description": "",
+          "disabled": false
+        },
+        {
+          "id": "pair_68bad3561c584dd1be349a78e1a5f958",
+          "name": "",
+          "value": "",
+          "description": "",
+          "disabled": false
+        }
+      ],
+      "headers": [{ "name": "User-Agent", "value": "insomnia/10.1.1" }],
+      "authentication": {},
+      "metaSortKey": -1732079404294,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_69a6ebb850a6433da8ecca8305d87765",
+      "parentId": "wrk_scratchpad",
+      "modified": 1732079419097,
+      "created": 1732079322459,
+      "url": "http://localhost:3000/api/tasks/update",
+      "name": "Task Update",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t \"id\": \"3\",\n\t \"title\": \"Bake the cakes 3\", \n   \"status\": \"open\",\n   \"priority\": \"high\",\n   \"tags\":[\"tag1\"],\n   \"description\": \"Bake the cakes\",\n\t \"dueDate\": \"2030-04-23T18:25:43.511Z\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.1.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732079322459,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_f020ae05055c462bbb4e8fd99e56a4f7",
+      "parentId": "wrk_scratchpad",
+      "modified": 1732079345318,
+      "created": 1732054365540,
+      "url": "http://localhost:3000/api/tasks/create",
+      "name": "Task Create",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t \"title\": \"Bake the cakes 3\", \n   \"status\": \"open\",\n   \"priority\": \"high\",\n   \"tags\":[\"tag1\", \"tag2\", \"tag3\"],\n   \"description\": \"Bake the cakes\",\n\t \"dueDate\": \"2030-04-23T18:25:43.511Z\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.1.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732054365540,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_a774eac6a8cd4156b297c043f0d05b41",
+      "parentId": "wrk_scratchpad",
+      "modified": 1732049814356,
+      "created": 1732049783513,
+      "url": "http://localhost:3000/api/users/logout",
+      "name": "User Logout",
+      "description": "",
+      "method": "DELETE",
+      "body": {},
+      "parameters": [],
+      "headers": [{ "name": "User-Agent", "value": "insomnia/10.1.1" }],
+      "authentication": {},
+      "metaSortKey": -1732049783513,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_8d6b8af4d0554a08be1fc2a8ab5c6e09",
+      "parentId": "wrk_scratchpad",
+      "modified": 1732049802135,
+      "created": 1732049209910,
+      "url": "http://localhost:3000/api/users/login",
+      "name": "User Login",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"email\": \"test@example.com\",\n\t\"password\": \"password\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.1.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732049209910,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_c22036821be24cc382bb2b4fa5eb693e",
+      "parentId": "wrk_scratchpad",
+      "modified": 1732091194675,
+      "created": 1732049011576,
+      "url": "http://localhost:3000/api/users/register",
+      "name": "User Register",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"test\",\n\t\"email\": \"test@example.com\",\n\t\"password\": \"password\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        { "name": "Content-Type", "value": "application/json" },
+        { "name": "User-Agent", "value": "insomnia/10.1.1" }
+      ],
+      "authentication": {},
+      "metaSortKey": -1732049011576,
+      "isPrivate": false,
+      "pathParameters": [],
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_99d30891da4bdcebc63947a8fc17f076de878684",
+      "parentId": "wrk_scratchpad",
+      "modified": 1732048964586,
+      "created": 1732048964586,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1732048964586,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_99d30891da4bdcebc63947a8fc17f076de878684",
+      "parentId": "wrk_scratchpad",
+      "modified": 1732084683407,
+      "created": 1732048964696,
+      "name": "Default Jar",
+      "cookies": [
+        {
+          "key": "access_token",
+          "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAZXhhbXBsZS5jb20iLCJuYW1lIjoidGVzdCIsImlhdCI6MTczMjA4NDY4M30.FBrLCOJVV2GzWaoF1kGhwNXozF_RB1YnWmtZSjatn1A",
+          "domain": "localhost",
+          "path": "/",
+          "secure": true,
+          "httpOnly": true,
+          "hostOnly": true,
+          "creation": "2024-11-19T20:51:40.048Z",
+          "lastAccessed": "2024-11-20T06:38:03.407Z",
+          "sameSite": "lax",
+          "id": "21f28d2b-0e04-42ec-a2f7-84ad43d2374b"
+        }
+      ],
+      "_type": "cookie_jar"
+    }
+  ]
+}
